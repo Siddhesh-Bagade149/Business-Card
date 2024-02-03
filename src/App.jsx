@@ -3,11 +3,11 @@ import "./App.css";
 import { BusinessCard } from "../component/BusinessCard";
 
 function App() {
-  const [name, setName] = useState("");
-  const [descp, setDescp] = useState("");
-  const [number, setNumber] = useState("");
-  const [email, setEmail] = useState("");
-  const [linkedin, setLinkedin] = useState("");
+  const [name, setName] = useState("Name");
+  const [descp, setDescp] = useState("short description");
+  const [number, setNumber] = useState("number");
+  const [email, setEmail] = useState("email id");
+  const [linkedin, setLinkedin] = useState("linkedIn url with https");
   return (
     <div>
 

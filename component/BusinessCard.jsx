@@ -1,3 +1,4 @@
+
 export function BusinessCard (props) {
   return (
     <div className='Grandparent' style={styles.card}>
@@ -15,7 +16,7 @@ export function BusinessCard (props) {
                 href={props.linkedIn}
                 target='_blank'
                 rel='noopener noreferrer'
-                style={{ ...styles.link, marginLeft: '0px' }}
+                // style={{ ...styles.link, marginLeft: '0px' }}
               >
                 LinkedIn
               </a>
@@ -29,16 +30,18 @@ export function BusinessCard (props) {
 
 const styles = {
   card: {
+    // width:'100%',
     color: '#FFD700',
     border: '1px solid #ddd',
     borderRadius: '20px',
     padding: '20px',
-    margin: '20px',
-    // maxWidth: '800px',
+    margin: ' 20px auto',
+    maxWidth: '600px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     backgroundColor: 'black'
   },
   parent: {
+    // width:'100%',
     display: 'flex',
     flexDirection: 'row',
     textAlign: 'center',
@@ -51,20 +54,21 @@ const styles = {
     padding: '10px',
     textAlign: 'center',
     // minWidth: '200px',
-    margin: '20px'
+    margin: '20px auto'
   },
   child2: {
+    width:'auto',
     // minWidth: '200px',
     padding: '10px',
     textAlign: 'left',
-    margin: '20px'
+    margin: '20px auto'
   },
   name: {
     fontSize: '24px',
     marginBottom: '10px'
   },
   description: {
-    fontSize: '10px',
+    fontSize: '16px',
     marginBottom: '15px'
   },
 
